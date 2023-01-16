@@ -1,38 +1,174 @@
-.App {
+.search-row, .row.localization{
+  justify-content: end;
+}
+.form-control.input{
+  height: 4em;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.card.text-bg-dark{
+  border: none !important;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card-img-overlay > h5 {
+  color: darkblue !important;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.card-img-overlay > p {
+  font-size: 18px;
+  color: darkblue !important;
+  margin-bottom: 0.2rem !important;
+}
+
+.search, .localization, .form-label{
+  font-size: x-large;
+  color: midnightblue;
+}
+.p-local{
+  text-align: center;
+  font-size: x-large;
+  margin-top: .5em;
+  
+}
+.card.card-local {
+  background-color: #5fbfdc;
+  background-image: linear-gradient(90deg, #5fbfdc 0%, #00a1ff 100%);
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  margin-bottom: 2em;
+  color: aliceblue;
+}
+.card.card-local-2{
+  border-radius: 10px;
+  background-color: #b0b3b7;
+  background-image: linear-gradient(62deg, #b0b3b7 0%, #949494 100%);
+  color: aliceblue;
+}
+
+.row-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 380px
+}
+
+.add-city{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-city-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+@media(min-width: 1140px) {
+  .row-main {
+    flex-direction: row;
+  }
+
+  .card-local {
+    width: 100%;
+  }
+
+  .row.add-city,
+  .add-localiziotion-container {
+    width: 100% !important;
+    height: 100%;
+  }
+  .card-img-overlay{
+    width: 50%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.top-sub-container,
+.col-md-7 {
+  width: 100% !important;
+}
+
+.top-main-container {
+  width: 75% !important;
+  max-width: 75% !important;
+  margin: auto !important;
+}
+
+.add-localiziotion-container {
+  margin: auto;
+  width: auto;
+  height: 100%;
+}
+
+/* ICON */
+.bi.bi-plus-square{
+  width: 1em;
+}
+.bi.bi-geo-alt-fill{
+  margin-left: 7em;
+}
+
+@media(max-width: 800px) {
+  .main-container {
+    flex-direction: column !important;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-one {
+  min-width: 600px;
+}
+
+.add-city-container {
+  height: 100%;
+  justify-content: space-between;
+}
+
+.card-today {
+  border-radius: 35px;
+}
+
+.bi.bi-cloud-lightning-rain-fill{
+  text-align: center;
+}
+
+.bi.bi-cloud-fill {
+  text-align: center;
+  
+}
+
+.temp{
+  text-align: right;
+  font-size: xx-large;
+}
+
+.temp-today{
+  text-align: center;
+  font-size: xx-large;
+}
+
+.p-today-city{
+  text-align: center;
+}
+
+.bi.bi-wind{
+  float: left;
+  margin-top: 4em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.temp-month{
+  text-align: center;
+}
+.temp-month-humidity{
+  margin-left: 4em;
 }
